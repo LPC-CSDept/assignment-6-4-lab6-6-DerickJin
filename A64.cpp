@@ -13,7 +13,7 @@
 using namespace std;
 
 //----------
-// Make a line for Function Prototype for getListprime Here
+void getListprime(int begin = 0, int end = 100);
 //----------
 
 int main()
@@ -24,12 +24,29 @@ int main()
 	if (begin < end)
 		getListprime(begin, end);
 	else if (begin > end)
-		getListprime();
+		getListprime(begin = 0, end = 100);
 	else
-		getListprime(begin);
+		getListprime(begin,end = 100);
 }
 void getListprime(int begin, int end)
 {
-
-	// Complete this function
+    int i, j;
+    using namespace std;
+    for (i = begin; i <= end; i++)
+    {
+        for (j = 2; j <= (i/2); j++)
+        {
+            if (i % j == 0)
+            {
+                break;
+            }
+        }
+        if (j > (i/2))
+        {
+            cout << i << " is prime number\n";
+        }
+        
+        
+    }
+    
 }
