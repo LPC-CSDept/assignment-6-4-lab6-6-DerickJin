@@ -24,9 +24,9 @@ int main()
 	if (begin < end)
 		getListprime(begin, end);
 	else if (begin > end)
-		getListprime(begin = 0, end = 100);
+		getListprime();
 	else
-		getListprime(begin,end = 100);
+		getListprime(begin);
 }
 void getListprime(int begin, int end)
 {
